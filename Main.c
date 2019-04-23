@@ -27,11 +27,17 @@
 #define listaH
 #endif
 
+void imprimir(ListaNumeros *unaLista){
+	int i;
+	for(i=0;i<unaLista->tamMaximo;i++){
+		printf("[%i]->",unaLista->arregloDatos[i]);
+	}
+}
 
 
 void main(){
 	ListaNumeros *Laux;
-	Laux = creaListaNumerosLlena(10,20);
+	Laux = creaListaNumerosLlena(1000000,100000000);
 	imprimir(Laux);
 	buscaNumeroEnListaNumeros(Laux,11);
 
