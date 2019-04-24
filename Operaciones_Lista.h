@@ -31,13 +31,14 @@ ListaNumeros *creaListaNumerosVacia(int tamMax){
 
 ListaNumeros *creaListaNumerosLlena(int tamMax,int limNumeros){
 	ListaNumeros *ListaAux = creaListaNumerosVacia(tamMax);
-	int cont; int elem;
+	int cont=0;
 	srand(time(NULL));
-	for(cont = 0;cont < tamMax;cont++){
-		elem = rand()%(limNumeros+1);
+	while(cont<tamMax){
+		int elem = rand()%(limNumeros+1);
 		ListaAux->arregloDatos[cont] = elem;
+		cont++;
 		//insertarAlFinal(ListaAux,elem);
-        ListaAux->contadorCantidad = cont;
+       	ListaAux->contadorCantidad = cont;
 	}
 
 
@@ -64,9 +65,3 @@ int buscaNumeroEnListaNumeros(ListaNumeros *unaListaNumeros,int unNumero){
 }
 
 
-void imprimir(ListaNumeros *unaLista){
-	int cont; printf("\n");
-	for(cont = 0;cont < unaLista->tamMaximo;cont++){
-		printf("[%i]->",unaLista->arregloDatos[cont]);
-	}
-}
