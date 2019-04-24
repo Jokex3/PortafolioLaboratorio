@@ -18,15 +18,15 @@ ListaNumeros *creaListaNumerosVacia(int tamMax){
 	return (ListaAux);
 }
 
-/*void insertarAlFinal(ListaNumeros *unaLista,int elemAgregar){
-    if(unaLista->contadorCantidad == 0){
-        unaLista->arregloDatos[unaLista->contadorCantidad] = elemAgregar;
-        unaLista->contadorCantidad++;
-    }else{
-        unaLista->arregloDatos[unaLista->contadorCantidad] = elemAgregar;
-        unaLista->contadorCantidad++;
-    }
-}*/
+int ultimoPosicion(ListaNumeros *unaLista){
+	int pos=0;
+	while(pos <= unaLista->contadorCantidad){
+		
+	
+	}
+
+
+}
 
 
 ListaNumeros *creaListaNumerosLlena(int tamMax,int limNumeros){
