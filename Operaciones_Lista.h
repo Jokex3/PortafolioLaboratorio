@@ -12,7 +12,7 @@ ListaNumeros *creaListaNumerosVacia(int tamMax){
 	ListaNumeros *ListaAux = malloc(sizeof (struct nodo));
 	ListaAux->tamMaximo = tamMax;
 	ListaAux->contadorCantidad = 0;
-	ListaAux->arregloDatos = malloc(sizeof(int)%tamMax);
+	ListaAux->arregloDatos = malloc(sizeof(int)*tamMax);
 
 
 	return (ListaAux);
